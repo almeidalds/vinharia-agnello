@@ -101,16 +101,20 @@ body {
 }
 
 .hero {
-    background: var(--creme);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 570px;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 520px;
+
+    padding: 40px 42px 5px;
 }
 
 .hero-conteudo {
     align-self: center;
-    max-width: 600px;
-    padding: 52px 40px 70px 0;
+    max-width: 520px;
+    padding-left: 50px;
 
 }
 
@@ -149,6 +153,23 @@ h1 {
     line-height: 1.75;
     margin: 25px 0 31px;
     max-width: 470px;
+}
+
+.hero-imagem {
+    align-items: center;
+    flex: flex;
+    justify-content: center;
+    min-height: 440px;
+}
+
+.hero-imagem img {
+    display: block;
+    height: auto;
+    max-height: 430px;
+    max-height: 420px;
+
+    object-fit: contain;
+    width: 85%;
 }
 
 .botao {
