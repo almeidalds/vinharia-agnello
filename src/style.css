@@ -247,3 +247,123 @@ h2 {
     grid-template-columns: 1fr;
     padding: 24px 25px;
 }
+
+
+/* pagina de historia */
+body.pagina-historia {
+    font: inherit
+}
+
+body.pagina-historia {
+    margin: 0;
+}
+
+div#conteudo3 {
+    overflow: hidden;
+}
+
+.navegacao2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 28px 42px;
+}
+
+span.marca-safra2 {
+    color: #846f62;
+
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.container-historia {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+.logo-marca2 {
+    align-items: center;
+
+    border: 1px solid var(--vinho);
+    border-radius: 50%;
+
+    display: flex;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+
+    height: 30px;
+
+    justify-content: center;
+
+    width: 30px;
+
+}
+
+
+
+.menu2 {
+    align-items: center;
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}   
+
+.menu2 a {
+    color: var(--texto);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.menu2 a:hover {
+    color: var(--vinho);
+}
+
+.descricao4 {
+    color: #362c2c;
+    font-size: 1.03rem;
+    line-height: 1.75;
+    margin: 25px 0 31px;
+    max-width: 470px;
+    align-items: center;
+}
+
+.conteudo-historia {
+  max-width: 1100px;
+  margin: 0 auto;       
+  padding: 0 24px; 
+}
+
+.marca {
+    align-items: center;
+    color: var(--vinho);
+    display: flex;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    gap: 10px;
+
+    letter-spacing: 0.14em;
+    text-decoration: none;
+}
+
+.imagem-coluna {
+  display: block;        
+  width: 70%;           
+  height: 300px;         
+  object-fit: cover;     
+  margin-top: 20px; 
+  }
