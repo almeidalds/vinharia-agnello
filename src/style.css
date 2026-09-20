@@ -27,6 +27,7 @@ body {
     margin: 0;
 }
 
+/* organiza a navegação no horizontal */
 .navegacao {
     align-items: center;
     display: flex;
@@ -52,6 +53,7 @@ body {
 
 }
 
+/* Organiza os links principais do menu em uma linha horizontal */
 .menu {
     align-items: center;
     display: flex;
@@ -100,6 +102,7 @@ body {
     font-style: italic;
 }
 
+/* Usar a class hero para seção principal de destaque da página */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,6 +114,7 @@ body {
     padding: 40px 42px 5px;
 }
 
+/* controla o espaço e a posição dos textos da seção */
 .hero-conteudo {
     align-self: center;
     max-width: 520px;
@@ -118,6 +122,7 @@ body {
 
 }
 
+/* Formata os texto que são subtitulos */
 .sobretitulo {
     color: #9b7454;
 
@@ -172,6 +177,7 @@ h1 {
     width: 85%;
 }
 
+/* Defini o estilo de botões */
 .botao {
     background: var(--vinho);
     display: inline-block;
@@ -195,6 +201,7 @@ h1 {
     margin-left: 18px;
 }
 
+/* Cria um efeito visual quando passar o mouse no botão */
 .botao:hover {
     background: transparent;
     color: var(--vinho);
@@ -234,6 +241,7 @@ h2 {
     font-weight: 600;
     margin: 12px 0 8px;
 }
+
 
 .detalhes {
     grid-template-columns: 1fr;
