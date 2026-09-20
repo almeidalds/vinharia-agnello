@@ -5,64 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descrição" content=" Vinharia Agnello, especializada em vinhos nacioanais e importados">
     <meta name="palavras-chaves" content="vinhos, vinharia, vinharia Agnello">
-
+    
     <title>Vinharia Agnello</title>
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <header>
-        <h1>Vinharia Agnello</h1>
+    <div class="pagina">
+        <!-- cabeçalho e menu -->
+         <header>
+            <nav class="navegacao">
 
-            <!-- menu de navegação -->
-        <nav>
-            <ul>
-       
-                <li>
-                    <a href="./src/pages/historia.html"> História</a>
-                </li>
+                <a class="marca" href="./index.html">
+                    <span class="logo-marca"></span>
+                    <span>VINHARIA AGNELLO</span>
+                </a>
 
-                <li>
-                    <a href="./src/pages/produtos.html"> Produtos</a>
-                </li>
+                <ul class="menu">
 
-                <li>
-                    <a href="./src/pages/contato.html"> Contato</a>
-                </li>
+                    <li>
+                        <a href="./index.html">Início</a>
+                    </li>
 
-                <li>
-                    <a href="./src/pages/galeria.html"> Galeria</a>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <a href="./src/pages/historia.html">História</a>
+                    </li>
 
-    </header>
-    <main>
+                    <li>
+                        <a href="./src/pages/produtos.html">Produtos</a>
+                    </li>
 
-        <section>
-            <h2>Conheça a Vinharia Agnello</h2>
+                    <li>
+                        <a href="./src/pages/contato.html">Contato</a>
+                    </li>
 
-            <img src="./src/assets/img/Rose Mantra Estate.jpeg" alt=" Garaffa de vinho Rose Mantra Estate">
+                    <li>
+                        <a href="./src/pages/galeria.html">Galeria</a>
+                    </li>
+                </ul>
 
-            <p>
-                A Vinharia agnelo é uma empresa familiaar que atua há mais de 15 anos
-                oferecendo vinhos nacionais e vinhos importados.
-            </p>
+                <span class="marca-safra">
+                    Desde 2011
+                </span>
 
-            <p>
-                A empresa busca oferecer atendimento especializado aos seus clientes,
-                ajudando-os na escolha de vinhos de acordo com suas sua prefências e paixões.
-            </p>
-        </section>
+            </nav>
+         </header>
 
-        <section>
-            <h2>Atendimento especializado</h2>
+         <main>
+            <section class="hero">
+                <div class="hero-conteudo">
+                    
+                    <p class="sobretitulo">
+                        Tradição e Experiência
+                    </p>
 
-            <p>
-                Um dos diferenciais da Vinharia Agnello é o conhecimento de 
-                seus vendedores, que auxiliam os clientes durante a escolha
-                dos vinhos.
-            </p>
-        </section>
-    </main>
+                    <h1>
+                        Vinhos selecionados
+                    </h1>
+
+                    <p class="descricao">
+                        A vinharia Agnello é uma empresa familiar que atua há
+                        mais de 15 anos oferecendo vinhos nacionais e importados,
+                        com atendimento especializado para você.
+                    </p>
+
+                    <a class="botao" href="./src/pages/produtos.html">
+                        Conheça nossos vinhos
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-imagem">
+                    <img src="./src/assets/img/image-removebg-preview (1).png" alt=" Seleção de Vinhos da Vinharia Agnello">
+                </div>
+            </section>
+
+            <section class="detalhes">
+
+                <article>
+                    <span class="numero">01</span>
+
+                    <h2>Tradição</h2>
+
+                    <p>
+                        Uma empresa familiar atuando há mais de 15 anos
+                        no mercado de vinhos.
+                    </p>
+                </article>
+
+                <article>
+
+                    <span class="numero">02</span>
+
+                    <h2>Conhecimento</h2>
+
+                    <p>
+                        Atendimento realizado por profissional que conhecem
+                        as características dos produtos.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <span class="numero">03</span>
+
+                    <p>
+                        Vinhos nacionais e importados selecionados para
+                        diferentes preferências.
+                    </p>
+
+                </article>
+         </main>
+
+    </div>
 </body>
 </html>
