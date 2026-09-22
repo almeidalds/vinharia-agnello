@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Vinharia Agnello</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="pagina">
+        <!-- cabeçalho e menu -->
+         <header>
+            <nav class="navegacao">
+
+                <a class="marca" href="../../index.html">
+                    <span class="logo-marca"></span>
+                    <span>VINHERIA AGNELLO</span>
+                </a>
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="../../index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="historia.html">História</a>
+                    </li>
+
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+
+                    <li>
+                        <a href="galeria.html">Galeria</a>
+                    </li>
+                </ul>
+
+                <span class="marca-safra">
+                    Desde 2011
+                </span>
+
+            </nav>
+         </header>
+         
+    <h1 class="titulo4">Contato</h1>
+    <form class="titulo4">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+
+            <br><br>
+            <label for="numeroTelefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(Seu DDD) 99999-0000">
+            
+            <br><br>
+            <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="">Selecione um assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+
+            <br><br>
+            <label for="contato">Prefiro ser contatado por:</label>
+            <input type="radio" id="email-contato" name="contato" value="email">
+            <label for="email-contato">E-mail</label>
+            <input type="radio" id="telefone-contato" name="contato" value="telefone">
+            <label for="telefone-contato">Telefone</label>
+
+            <br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea>
+
+            <br><br>
+            <label>
+            <input type="checkbox" name="privacidade" required>
+                Aceito a política de privacidade
+            </label>
+            <br><br>
+            <button type="submit">
+                Enviar formulário
+            </button>
+            <button type="reset">
+                Limpar formulário
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>
