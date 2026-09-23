@@ -1141,3 +1141,32 @@ header {
 .pagina-inicio .rodape {
     margin-top: 0;
 }
+/*Ajuste para a visualização da head em telas pequenas */
+@media (max-width: 600px) {
+    .navegacao {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .navegacao .marca {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .navegacao .marca-safra {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 0.75rem;
+    }
+
+    .navegacao .menu {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+    .navegacao .menu {
+    width: 100%;
+    justify-content: space-between;
+    gap: 4px;
+}
+}
