@@ -1,131 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrição" content=" Vinheria Agnello, especializada em vinhos nacionais e importados">
-    <meta name="palavras-chaves" content="vinhos, vinheria, vinheria Agnello">
-    
-    <title>Vinharia Agnello</title>
-
-    <!-- fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/style.css">
-</head>
-<body>
-    <div class="pagina">
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vinheria Agnello: tradição, atendimento especializado e seleção de vinhos nacionais e importados.">
+        <meta name="keywords" content="vinheria agnello, vinhos, harmonização, São Paulo">
+        <title>
+            Início | Vinheria Agnello
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/style.css">
+    </head>
+    <body class="pagina-inicio">
+        <div class="fundo-video" aria-hidden="true">
+            <video id="video-fundo" muted loop playsinline preload="none" poster="src/assets/imgs/vinho-fundo-poster.jpg" tabindex="-1">
+                <source data-src="src/assets/videos/vinho-fundo.mp4" type="video/mp4">
+            </video>
+        </div>
         <!-- cabeçalho e menu -->
-         <header>
-            <nav class="navegacao">
-
-                <a class="marca" href="./index.html">
-                    <span class="logo-marca"></span>
-                    <span>VINHERIA AGNELLO</span>
+        </a>
+        <header>
+            <nav class="navegacao" aria-label="Menu principal">
+                <a class="marca" href="index.html">
+                    <span class="logo-marca" aria-hidden="true">
+                        A
+                    </span>
+                    <span>
+                        VINHERIA AGNELLO
+                    </span>
                 </a>
-
                 <ul class="menu">
-
                     <li>
-                        <a href="./index.html">Início</a>
+                        <a href="index.html" aria-current="page">
+                            Início
+                        </a>
                     </li>
-
                     <li>
-                        <a href="./src/pages/historia.html">História</a>
+                        <a href="src/pages/historia.html">
+                            História
+                        </a>
                     </li>
-
                     <li>
-                        <a href="./src/pages/produtos.html">Produtos</a>
+                        <a href="src/pages/produtos.html">
+                            Produtos
+                        </a>
                     </li>
-
                     <li>
-                        <a href="./src/pages/contato.html">Contato</a>
+                        <a href="src/pages/contato.html">
+                            Contato
+                        </a>
                     </li>
-
                     <li>
-                        <a href="./src/pages/galeria.html">Galeria</a>
+                        <a href="src/pages/galeria.html">
+                            Galeria
+                        </a>
                     </li>
                 </ul>
-
                 <span class="marca-safra">
                     Desde 2011
                 </span>
-
             </nav>
-         </header>
-
-         <main>
+        </header>
+        <button class="controle-video" type="button" aria-controls="video-fundo" hidden>Play no vídeo de fundo</button>
+        <main id="conteudo" tabindex="-1">
             <section class="hero">
                 <div class="hero-conteudo">
-                    
                     <p class="sobretitulo">
                         Tradição e Experiência
                     </p>
-
                     <h1>
                         Vinhos selecionados
                     </h1>
-
                     <p class="descricao">
-                        A vinheria Agnello é uma empresa familiar que atua há
-                        mais de 15 anos oferecendo vinhos nacionais e importados,
-                        com atendimento especializado para você.
+                        A vinheria Agnello é uma empresa familiar que atua há mais de 15 anos oferecendo vinhos nacionais e importados, com atendimento especializado para você.
                     </p>
-
-                    <a class="botao" href="./src/pages/produtos.html">
-                        Conheça nossos vinhos
-                        <span>→</span>
+                    <a class="botao botao-vinho" href="./src/pages/produtos.html">
+                        <span>Conheça nossos vinhos</span>
+                        <span class="seta" aria-hidden="true">
+                            →
+                        </span>
                     </a>
-
                 </div>
-
                 <div class="hero-imagem">
-                    <img src="./src/assets/img/image-removebg-preview (1).png" alt=" Seleção de Vinhos da Vinharia Agnello">
+                    <img src="src/assets/imgs/selecao-vinhos.png" alt=" Seleção de Vinhos da Vinheria Agnello">
                 </div>
             </section>
-
             <section class="detalhes">
-
                 <article>
-                    <span class="numero">01</span>
-
-                    <h2>Tradição</h2>
-
+                    <span class="numero">
+                        01
+                    </span>
+                    <h2>
+                        Tradição
+                    </h2>
                     <p>
-                        Uma empresa familiar atuando há mais de 15 anos
-                        no mercado de vinhos.
+                        Uma empresa familiar atuando há mais de 15 anos no mercado de vinhos.
                     </p>
                 </article>
-
                 <article>
-
-                    <span class="numero">02</span>
-
-                    <h2>Conhecimento</h2>
-
+                    <span class="numero">
+                        02
+                    </span>
+                    <h2>
+                        Conhecimento
+                    </h2>
                     <p>
-                        Atendimento realizado por profissionais que conhecem
-                        as características dos produtos.
+                        Atendimento realizado por profissionais que conhecem as características dos produtos.
                     </p>
-
                 </article>
-
                 <article>
-
-                    <span class="numero">03</span>
-
+                    <span class="numero">
+                        03
+                    </span>
+                    <h2>
+                        Variedade
+                    </h2>
                     <p>
-                        Vinhos nacionais e importados selecionados para
-                        diferentes preferências.
+                        Vinhos nacionais e importados selecionados para diferentes preferências.
                     </p>
-
                 </article>
-         </main>
-
-    </div>
-</body>
+            </section>
+        </main>
+        <footer class="rodape">
+            <a href="src/pages/contato.html">
+                Contato
+            </a>
+        </footer>
+        <script src="src/js/video-fundo.js"></script>
+        <script src="src/js/script.js">
+        </script>
+    </body>
 </html>

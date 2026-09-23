@@ -1,102 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>Vinharia Agnello</title>
-
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <div class="pagina">
-        <!-- cabeçalho e menu -->
-         <header>
-            <nav class="navegacao">
-
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conheça o formulário demonstrativo de contato da Vinheria Agnello.">
+        <meta name="keywords" content="vinheria agnello, vinhos, harmonização, São Paulo">
+        <title>
+            Contato | Vinheria Agnello
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <a class="pular-conteudo" href="#conteudo">
+            Pular para o conteúdo
+        </a>
+        <header>
+            <nav class="navegacao" aria-label="Menu principal">
                 <a class="marca" href="../../index.html">
-                    <span class="logo-marca"></span>
-                    <span>VINHERIA AGNELLO</span>
+                    <span class="logo-marca" aria-hidden="true">
+                        A
+                    </span>
+                    <span>
+                        VINHERIA AGNELLO
+                    </span>
                 </a>
-
                 <ul class="menu">
-
                     <li>
-                        <a href="../../index.html">Início</a>
+                        <a href="../../index.html">
+                            Início
+                        </a>
                     </li>
-
                     <li>
-                        <a href="historia.html">História</a>
+                        <a href="historia.html">
+                            História
+                        </a>
                     </li>
-
                     <li>
-                        <a href="produtos.html">Produtos</a>
+                        <a href="produtos.html">
+                            Produtos
+                        </a>
                     </li>
-
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <a href="contato.html" aria-current="page">
+                            Contato
+                        </a>
                     </li>
-
                     <li>
-                        <a href="galeria.html">Galeria</a>
+                        <a href="galeria.html">
+                            Galeria
+                        </a>
                     </li>
                 </ul>
-
                 <span class="marca-safra">
                     Desde 2011
                 </span>
-
             </nav>
-         </header>
-         
-    <h1 class="titulo4">Contato</h1>
-    <form class="titulo4">
-        <fieldset>
-            <legend>Formulário de Contato</legend>
-            <br>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
-
-            <br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
-
-            <br><br>
-            <label for="numeroTelefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(Seu DDD) 99999-0000">
-            
-            <br><br>
-            <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto">
-                    <option value="">Selecione um assunto</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="elogio">Elogio</option>
-                    <option value="reclamacao">Reclamação</option>
-                </select>
-
-            <br><br>
-            <label for="contato">Prefiro ser contatado por:</label>
-            <input type="radio" id="email-contato" name="contato" value="email">
-            <label for="email-contato">E-mail</label>
-            <input type="radio" id="telefone-contato" name="contato" value="telefone">
-            <label for="telefone-contato">Telefone</label>
-
-            <br><br>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea>
-
-            <br><br>
-            <label>
-            <input type="checkbox" name="privacidade" required>
-                Aceito a política de privacidade
-            </label>
-            <br><br>
-            <button type="submit">
-                Enviar formulário
-            </button>
-            <button type="reset">
-                Limpar formulário
-            </button>
-        </fieldset>
-    </form>
-</body>
+        </header>
+        <main id="conteudo" tabindex="-1">
+            <div class="cabecalho-pagina">
+                <h1>
+                    Contato
+                </h1>
+            </div>
+            <div class="contato-layout">
+                <aside class="contato-info" aria-labelledby="atendimento-titulo">
+                    <h2 id="atendimento-titulo">
+                        Como podemos ajudar?
+                    </h2>
+                    <p>
+                        Escolher um vinho pode trazer muitas perguntas. Nosso atendimento valoriza suas preferências e a ocasião de consumo.
+                    </p>
+                    <ul class="lista-atendimento">
+                        <li>
+                            Dúvidas sobre tipos de vinho
+                        </li>
+                        <li>
+                            Sugestões de harmonização
+                        </li>
+                        <li>
+                            Elogios e comentários sobre a experiência
+                        </li>
+                    </ul>
+                    <p class="aviso-demo" id="aviso-demo">
+                        Este formulário é uma demonstração. O envio está desativado!
+                    </p>
+                    <a href="produtos.html">
+                        Explore os tipos de vinho →
+                    </a>
+                </aside>
+                <form class="formulario-contato" aria-describedby="aviso-demo">
+                    <fieldset>
+                        <legend>
+                            Formulário de contato
+                        </legend>
+                        <p class="ajuda-campo">
+                            Os campos marcados com * são obrigatórios no modelo.
+                        </p>
+                        <div class="campos-duplos">
+                            <div class="campo">
+                                <label for="nome">
+                                    Nome *
+                                </label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" maxlength="100" required>
+                            </div>
+                            <div class="campo">
+                                <label for="email">
+                                    E-mail *
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" autocomplete="email" maxlength="150" required>
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">
+                                    Telefone (opcional)
+                                </label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-0000" autocomplete="tel" maxlength="25">
+                            </div>
+                            <div class="campo">
+                                <label for="assunto">
+                                    Assunto *
+                                </label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="" disabled selected>
+                                        Selecione um assunto
+                                    </option>
+                                    <option value="duvida">
+                                        Dúvida
+                                    </option>
+                                    <option value="elogio">
+                                        Elogio
+                                    </option>
+                                    <option value="reclamacao">
+                                        Reclamação
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <fieldset class="preferencia-contato">
+                            <legend>
+                                Preferência de contato
+                            </legend>
+                            <label class="opcao" for="email-contato">
+                                <input type="radio" id="email-contato" name="contato" value="email" checked>
+                                E-mail
+                            </label>
+                            <label class="opcao" for="telefone-contato">
+                                <input type="radio" id="telefone-contato" name="contato" value="telefone">
+                                Telefone
+                            </label>
+                        </fieldset>
+                        <div class="campo">
+                            <label for="mensagem">
+                                Mensagem *
+                            </label>
+                            <textarea id="mensagem" name="mensagem" rows="6" maxlength="2000" placeholder="Conte como podemos ajudar..." required>
+                            </textarea>
+                        </div>
+                        <label class="opcao" for="demonstracao">
+                            <input type="checkbox" id="demonstracao" name="demonstracao" required>
+                            Entendo que este formulário é apenas demonstrativo. *
+                        </label>
+                        <div class="acoes-formulario">
+                            <button class="botao" type="submit" disabled>
+                                Envio indisponível na demonstração
+                            </button>
+                            <button class="botao botao-secundario" type="reset">
+                                Limpar campos
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer class="rodape">
+            <a href="contato.html">
+                Contato
+            </a>
+        </footer>
+    </body>
 </html>

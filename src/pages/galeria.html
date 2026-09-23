@@ -1,88 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - Vinharia Agnello</title>
-
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <div class="pagina">
-        <!-- cabeçalho e menu -->
-         <header>
-            <nav class="navegacao">
-
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore imagens de vinhos e uma apresentação visual da Vinheria Agnello.">
+        <meta name="keywords" content="vinheria agnello, vinhos, harmonização, São Paulo">
+        <title>
+            Galeria | Vinheria Agnello
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <a class="pular-conteudo" href="#conteudo">
+            Pular para o conteúdo
+        </a>
+        <header>
+            <nav class="navegacao" aria-label="Menu principal">
                 <a class="marca" href="../../index.html">
-                    <span class="logo-marca"></span>
-                    <span>VINHERIA AGNELLO</span>
+                    <span class="logo-marca" aria-hidden="true">
+                        A
+                    </span>
+                    <span>
+                        VINHERIA AGNELLO
+                    </span>
                 </a>
-
                 <ul class="menu">
-
                     <li>
-                        <a href="../../index.html">Início</a>
+                        <a href="../../index.html">
+                            Início
+                        </a>
                     </li>
-
                     <li>
-                        <a href="historia.html">História</a>
+                        <a href="historia.html">
+                            História
+                        </a>
                     </li>
-
                     <li>
-                        <a href="produtos.html">Produtos</a>
+                        <a href="produtos.html">
+                            Produtos
+                        </a>
                     </li>
-
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <a href="contato.html">
+                            Contato
+                        </a>
                     </li>
-
                     <li>
-                        <a href="galeria.html">Galeria</a>
+                        <a href="galeria.html" aria-current="page">
+                            Galeria
+                        </a>
                     </li>
                 </ul>
-
                 <span class="marca-safra">
                     Desde 2011
                 </span>
-
             </nav>
-         </header>
-
-         <main>
-            <h1 class="titulo4">Nossa Galeria</h1>
-            
-            <div class="vinhos-tipos4">
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/adega-para-vinhos.jpg" alt="Adega para vinhos">
-                    <figcaption class="legenda2">Adega para Vinhos</figcaption>
-                </figure>
-                
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/espumante.jpg" alt="Espumante">
-                    <figcaption class="legenda2">Espumante</figcaption>
-                </figure>
-
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/vinho.branco.jpg" alt="Vinho Branco">
-                    <figcaption class="legenda2">Vinho Branco</figcaption>
-                </figure>
-
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/vinho.rose.jpg" alt="Vinho Rosé">
-                    <figcaption class="legenda2">Vinho Rosé</figcaption>
-                </figure>
-
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/vinho.tinto.jpg" alt="Vinho Tinto">
-                    <figcaption class="legenda2">Vinho Tinto</figcaption>
-                </figure>
-
-                <figure>
-                    <img class="vinhos-tipos3" src="../assets/img/Rose Mantra Estate.jpeg" alt="Rose Mantra Estate">
-                    <figcaption class="legenda2">Rose Mantra Estate</figcaption>
-                </figure>
+        </header>
+        <main id="conteudo" tabindex="-1">
+            <div class="cabecalho-pagina">
+                <p class="sobretitulo">
+                    Um olhar sobre a vinheria
+                </p>
+                <h1>
+                    Nossa galeria
+                </h1>
+                <p>
+                    Explore os rótulos que estampam nossa adega
+                </p>
             </div>
-         </main>
-    </div>
-</body>
+            <div class="galeria-grid">
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/adega-para-vinhos.jpg" aria-label="Abrir imagem: Adega para vinhos">
+                        <img src="../assets/imgs/adega-para-vinhos.jpg" alt="Prateleiras de uma adega com garrafas de vinho" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Adega para vinhos
+                    </figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/espumante.jpg" aria-label="Abrir imagem: Espumante">
+                        <img src="../assets/imgs/espumante.jpg" alt="Seleção de vinho espumante" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Espumante
+                    </figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/vinho.branco.jpg" aria-label="Abrir imagem: Vinho branco">
+                        <img src="../assets/imgs/vinho.branco.jpg" alt="Vinho branco" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Vinho branco
+                    </figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/vinho.rose.jpg" aria-label="Abrir imagem: Vinho rosé">
+                        <img src="../assets/imgs/vinho.rose.jpg" alt="Vinho rosé" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Vinho rosé
+                    </figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/vinho.tinto.jpg" aria-label="Abrir imagem: Vinho tinto">
+                        <img src="../assets/imgs/vinho.tinto.jpg" alt="Vinho tinto" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Vinho tinto
+                    </figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <a href="../assets/imgs/rose-mantra-estate.jpeg" aria-label="Abrir imagem: Rosé Mantra Estate">
+                        <img src="../assets/imgs/rose-mantra-estate.jpeg" alt="Rótulo Rosé Mantra Estate" loading="lazy">
+                    </a>
+                    <figcaption>
+                        Rosé Mantra Estate
+                    </figcaption>
+                </figure>
+           </div>
+           <a href="produtos.html" class="link-produtos">
+            Veja características e harmonizações →
+           </a>
+           </section>
+        </main>
+        <footer class="rodape"> 
+            <a href="contato.html">
+                Contato
+            </a>
+        </footer>
+    </body>
 </html>
