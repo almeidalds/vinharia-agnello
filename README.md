@@ -11,7 +11,7 @@ Projeto de apresentação da Vinheria Agnello e sistema básico de cadastro de v
 
 ## GitHub Pages
 
-preciso colocar o link do projeto assim que publicar!!
+https://github.com/almeidalds/vinharia-agnello.git
 
 ## Como executar
 
