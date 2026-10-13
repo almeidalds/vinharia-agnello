@@ -1176,4 +1176,18 @@ header {
 .detalhes article:hover {
     transform: translateY(-8px) scale(1.04);
 }
+.hero-imagem img {
+    transition: transform 0.5s ease;
+}
+.hero-imagem img:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+.logo-marca {
+    transition: transform 0.6s ease;
+}
+.marca:hover .logo-marca,
+.marca:focus-visible .logo-marca {
+    transform: rotate(360deg);
+}
+
 
