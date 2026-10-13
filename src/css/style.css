@@ -1170,3 +1170,10 @@ header {
     gap: 4px;
 }
 }
+.detalhes article {
+    transition: transform 0.3s ease;
+}
+.detalhes article:hover {
+    transform: translateY(-8px) scale(1.04);
+}
+
