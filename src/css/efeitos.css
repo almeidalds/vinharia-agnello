@@ -1,0 +1,136 @@
+.menu a {
+    transition:
+        color 0.2s,
+        border-color 0.2s;
+}
+
+.vinhos-tipos4 figure,
+.galeria-item {
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+.vinhos-tipos4 figure:hover,
+.galeria-item:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 22px 42px rgb(71 24 31 / 14%),
+        inset 0 1px 0 white;
+}
+
+.botao {
+    transition:
+        background 0.25s,
+        color 0.25s;
+}
+
+.botao-vinho {
+    transition:
+        color 0.25s,
+        box-shadow 0.3s;
+}
+
+.botao-vinho::before,
+.botao-vinho::after {
+    transform: translateY(0) rotate(-4deg);
+    transition: top 0.85s cubic-bezier(0.2, 0.65, 0.25, 1);
+}
+
+.botao-vinho::after {
+    transform: rotate(5deg);
+}
+
+.botao-vinho:hover::before,
+.botao-vinho:focus-visible::before,
+.botao-vinho:active::before,
+.botao-vinho:hover::after,
+.botao-vinho:focus-visible::after,
+.botao-vinho:active::after {
+    top: -35%;
+    animation: ondular-vinho 2.4s ease-in-out infinite alternate;
+}
+
+.botao-vinho::after {
+    animation-delay: -0.9s;
+}
+
+@keyframes ondular-vinho {
+    from {
+        transform: translateX(-2%) rotate(-4deg);
+    }
+    to {
+        transform: translateX(2%) rotate(4deg);
+    }
+}
+
+.detalhes article {
+    transition: transform 0.3s ease;
+}
+
+.detalhes article:hover {
+    transform: translateY(-8px) scale(1.04);
+}
+
+.hero-imagem img {
+    transition: transform 0.5s ease;
+}
+
+.hero-imagem img:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.logo-marca {
+    transition: transform 0.6s ease;
+}
+
+.marca:hover .logo-marca,
+.marca:focus-visible .logo-marca {
+    transform: rotate(360deg);
+}
+
+.marca-safra {
+    animation: brilho-safra 3s ease-in-out infinite;
+}
+
+@keyframes brilho-safra {
+    0%,
+    100% {
+        text-shadow: 0 0 0 rgb(121 92 73 / 0%);
+    }
+    50% {
+        text-shadow: 0 0 8px rgb(121 92 73 / 45%);
+    }
+}
+
+.pagina-inicio .hero-imagem img {
+    animation: flutuar-garrafa 4s ease-in-out infinite;
+}
+
+@keyframes flutuar-garrafa {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .botao-vinho,
+    .botao-vinho::before,
+    .botao-vinho::after,
+    .vinhos-tipos4 figure,
+    .galeria-item,
+    .marca-safra,
+    .pagina-inicio .hero-imagem img {
+        transition: none;
+        animation: none !important;
+    }
+
+    .vinhos-tipos4 figure:hover,
+    .galeria-item:hover {
+        transform: none;
+    }
+}

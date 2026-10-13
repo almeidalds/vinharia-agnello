@@ -1,3 +1,5 @@
+@import url("efeitos.css");
+
 /* Identidade visual do site */
 :root {
     --vinho: #591d32;
@@ -627,27 +629,9 @@ header {
         backdrop-filter: blur(20px) saturate(130%);
     }
 }
-.menu a {
-    transition:
-        color 0.2s,
-        border-color 0.2s;
-}
 .container-historia {
     padding: 28px;
     width: calc(100% - 48px);
-}
-.vinhos-tipos4 figure,
-.galeria-item {
-    transition:
-        transform 0.25s,
-        box-shadow 0.25s;
-}
-.vinhos-tipos4 figure:hover,
-.galeria-item:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 22px 42px rgb(71 24 31 / 14%),
-        inset 0 1px 0 white;
 }
 .galeria-item img,
 .imagem-coluna,
@@ -669,9 +653,6 @@ header {
 }
 .botao {
     border-radius: 999px;
-    transition:
-        background 0.25s,
-        color 0.25s;
 }
 .rodape {
     background: rgb(255 250 244 / 60%);
@@ -812,9 +793,6 @@ header {
         0 8px 22px rgb(72 24 28 / 16%);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    transition:
-        color 0.25s,
-        box-shadow 0.3s;
 }
 .botao-vinho::before,
 .botao-vinho::after {
@@ -829,13 +807,10 @@ header {
     border-radius: 44% 48% 0 0;
     background: linear-gradient(180deg, #ad484e, #711b30 22%, #410d20 65%);
     box-shadow: inset 0 3px 2px rgb(255 203 181 / 75%);
-    transform: translateY(0) rotate(-4deg);
-    transition: top 0.85s cubic-bezier(0.2, 0.65, 0.25, 1);
 }
 .botao-vinho::after {
     opacity: 0.4;
     border-radius: 49% 40% 0 0;
-    transform: rotate(5deg);
 }
 .botao-vinho:hover,
 .botao-vinho:focus-visible,
@@ -850,32 +825,12 @@ header {
         inset 0 2px 3px white,
         0 10px 28px rgb(72 24 28 / 24%);
 }
-.botao-vinho:hover::before,
-.botao-vinho:focus-visible::before,
-.botao-vinho:active::before,
-.botao-vinho:hover::after,
-.botao-vinho:focus-visible::after,
-.botao-vinho:active::after {
-    top: -35%;
-    animation: ondular-vinho 2.4s ease-in-out infinite alternate;
-}
-.botao-vinho::after {
-    animation-delay: -0.9s;
-}
 .botao-vinho span {
     margin-left: 0;
 }
 .botao-vinho .seta {
     font-size: 1.5rem;
     line-height: 1;
-}
-@keyframes ondular-vinho {
-    from {
-        transform: translateX(-2%) rotate(-4deg);
-    }
-    to {
-        transform: translateX(2%) rotate(4deg);
-    }
 }
 @media (max-width: 960px) {
     .navegacao {
@@ -936,21 +891,6 @@ header {
         padding: 22px;
     }
 }
-@media (prefers-reduced-motion: reduce) {
-    .botao-vinho,
-    .botao-vinho::before,
-    .botao-vinho::after,
-    .vinhos-tipos4 figure,
-    .galeria-item {
-        transition: none;
-        animation: none !important;
-    }
-    .vinhos-tipos4 figure:hover,
-    .galeria-item:hover {
-        transform: none;
-    }
-}
-
 /* Fade no fundo branco das fotos. */
 .vinhos-tipos4 figure,
 .galeria-item {
@@ -1170,24 +1110,3 @@ header {
     gap: 4px;
 }
 }
-.detalhes article {
-    transition: transform 0.3s ease;
-}
-.detalhes article:hover {
-    transform: translateY(-8px) scale(1.04);
-}
-.hero-imagem img {
-    transition: transform 0.5s ease;
-}
-.hero-imagem img:hover {
-    transform: rotate(-3deg) scale(1.05);
-}
-.logo-marca {
-    transition: transform 0.6s ease;
-}
-.marca:hover .logo-marca,
-.marca:focus-visible .logo-marca {
-    transform: rotate(360deg);
-}
-
-
