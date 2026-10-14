@@ -31,7 +31,9 @@ Imagens e vídeo são arquivos locais!
 index.html
 README.md
 src/
-    css/style.css
+    css/
+    style.css
+    efeitos.css
     js/
     script.js
     video-fundo.js
