@@ -155,3 +155,17 @@
         scale: none;
     }
 }
+
+::selection {
+    background: var(--vinho);
+    color: var(--creme);
+}
+
+.container-historia .sobretitulo + .descricao4::first-letter {
+    float: left;
+    margin: 6px 10px 0 0;
+    color: var(--vinho);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 3.4rem;
+    line-height: 0.8;
+}
