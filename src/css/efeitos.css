@@ -72,12 +72,16 @@
     transform: translateY(-8px) scale(1.04);
 }
 
+/* rotate e scale separados para não brigar com o transform da animação flutuar-garrafa */
 .hero-imagem img {
-    transition: transform 0.5s ease;
+    transition:
+        rotate 0.5s ease,
+        scale 0.5s ease;
 }
 
 .hero-imagem img:hover {
-    transform: rotate(-3deg) scale(1.05);
+    rotate: -3deg;
+    scale: 1.05;
 }
 
 .logo-marca {
@@ -132,5 +136,22 @@
     .vinhos-tipos4 figure:hover,
     .galeria-item:hover {
         transform: none;
+    }
+
+    .detalhes article,
+    .hero-imagem img,
+    .logo-marca {
+        transition: none;
+    }
+
+    .detalhes article:hover,
+    .marca:hover .logo-marca,
+    .marca:focus-visible .logo-marca {
+        transform: none;
+    }
+
+    .hero-imagem img:hover {
+        rotate: none;
+        scale: none;
     }
 }
